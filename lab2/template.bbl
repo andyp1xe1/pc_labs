@@ -1,0 +1,85 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nty/global//global/global}
+    \entry{bash_rand}{online}{}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{labeltitlesource}{title}
+      \field{title}{Bash Shell Generate Random Numbers}
+      \verb{urlraw}
+      \verb https://www.cyberciti.biz/faq/bash-shell-script-generating-random-numbers
+      \endverb
+      \verb{url}
+      \verb https://www.cyberciti.biz/faq/bash-shell-script-generating-random-numbers
+      \endverb
+    \endentry
+    \entry{memcpy}{online}{}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{labeltitlesource}{title}
+      \field{title}{Copying Memory in C}
+      \verb{urlraw}
+      \verb https://www.youtube.com/watch?v=NqUTiJPgBn8
+      \endverb
+      \verb{url}
+      \verb https://www.youtube.com/watch?v=NqUTiJPgBn8
+      \endverb
+    \endentry
+    \entry{geeks}{online}{}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{labeltitlesource}{title}
+      \field{title}{Geeks for Geeks}
+      \verb{urlraw}
+      \verb https://www.geeksforgeeks.org
+      \endverb
+      \verb{url}
+      \verb https://www.geeksforgeeks.org
+      \endverb
+    \endentry
+    \entry{malloc}{online}{}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{labeltitlesource}{title}
+      \field{title}{How to use malloc}
+      \verb{urlraw}
+      \verb https://www.youtube.com/watch?v=yFboyOwk2oM
+      \endverb
+      \verb{url}
+      \verb https://www.youtube.com/watch?v=yFboyOwk2oM
+      \endverb
+    \endentry
+    \entry{etc}{online}{}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{labeltitlesource}{title}
+      \field{title}{ProgrammerSought}
+      \verb{urlraw}
+      \verb https://www.programmersought.com
+      \endverb
+      \verb{url}
+      \verb https://www.programmersought.com
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+
