@@ -3,6 +3,10 @@
 **/main
 
 # Ignore LaTeX intermediary files and build directories in all subdirectories
+**/*.run.xml
+**/*.bcf
+**/*.bbl
+**/*.blg
 **/*.aux
 **/*.log
 **/*.synctex.gz
