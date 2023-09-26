@@ -1,0 +1,24 @@
+
+# Ignore the executable 'main' in all subdirectories
+**/main
+
+# Ignore LaTeX intermediary files and build directories in all subdirectories
+**/*.aux
+**/*.log
+**/*.synctex.gz
+**/*.pdf
+**/*.dvi
+**/*.fdb_latexmk
+**/*.fls
+**/*.out
+**/*.toc
+**/*.idx
+**/*.lof
+**/*.lot
+**/*.nav
+**/*.snm
+**/*.vrb
+**/_build/
+**/aux/
+**/auto/
+**/latex.out/
