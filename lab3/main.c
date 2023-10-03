@@ -89,7 +89,6 @@ int main() {
   m.arr = malloc(sizeof(int) * m.len * m.wid);
   m.spiral = malloc(sizeof(int) * m.len * m.wid);
 
-  printf("\n");
   printf("size: %i/%i\n", m.len, m.wid);
   m_gen(m);
   printf("random array:\n");
