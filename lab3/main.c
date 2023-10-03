@@ -25,21 +25,21 @@ void m_climb(matrix m) {
   while (k < m.len * m.wid) {
     m.spiral[k] = i * m.wid + j;
     if (i == i_beg && j < m.wid - j_end - 1)
-      ++j;
+      j++;
     else if (j == m.wid - j_end - 1 && i < m.len - i_end - 1)
-      ++i;
+      i++;
     else if (i == m.len - i_end - 1 && j > j_beg)
-      --j;
+      j--;
     else
-      --i;
+      i--;
 
     if ((i == i_beg + 1) && (j == j_beg) && (j_beg != m.wid - j_end - 1)) {
-      ++i_beg;
-      ++i_end;
-      ++j_beg;
-      ++j_end;
+      i_beg++;
+      i_end++;
+      j_beg++;
+      j_end++;
     }
-    ++k;
+    k++;
   }
 }
 
