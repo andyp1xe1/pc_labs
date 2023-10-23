@@ -176,7 +176,7 @@ void repl(buffer *buff) {
              "d - display text in buffer\n"
              "i - insert text and append to buffer\n"
              "s - substitute all occurrences of a word\n"
-             "c - count all occurances of a word\n"
+             "c - count all occurrences of a word\n"
              "w - write from buffer to file\n"
              "r - read from file and append to buffer\n"
              "z - clear buffer\n"
