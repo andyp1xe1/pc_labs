@@ -113,19 +113,6 @@ void copy_data(void *dest, void *source, type_t type) {
   memcpy(dest, source, size);
 }
 
-int is_full(stack_t *stack) {
-  if (stack->size == stack->nnum)
-    return 1;
-  return 0;
-}
-
-int is_empty(stack_t *stack) {
-  if (stack->node == NULL)
-    return 1;
-  else
-    return 0;
-}
-
 void stack_status(stack_t *stack) {
   printf("---------------\n"
          "stack size: %u\n"
@@ -142,10 +129,10 @@ int push(stack_t *stack, void *data, type_t type) {
     printf("no space left for allocating\n");
     return 0;
   }
-  // if (stack->size == stack->nnum) {
-  //   printf("stack is full\n");
-  //   return 0;
-  // }
+  if (stack->size == stack->nnum) {
+    printf("stack is full\n");
+    return 0;
+  }
   //// to_add->data = data;
   copy_data(to_add->data, data, type);
   to_add->next = stack->node;
@@ -279,7 +266,7 @@ void repl(stack_t *stack) {
       break;
     }
     case 'p': {
-      if (is_empty(stack))
+      if (stack->node == NULL)
         printf("stack is empty\n");
       else
         print_node(stack->node);
@@ -287,7 +274,7 @@ void repl(stack_t *stack) {
     }
     case 'e': {
       printf("stack is ");
-      if (is_empty(stack))
+      if (stack->node == NULL)
         printf("empty\n");
       else
         printf("not empty\n");
@@ -295,7 +282,7 @@ void repl(stack_t *stack) {
     }
     case 'f': {
       printf("stack is ");
-      if (is_full(stack))
+      if (stack->size == stack->nnum)
         printf("full\n");
       else
         printf("not full\n");
