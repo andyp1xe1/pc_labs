@@ -158,6 +158,7 @@ node_t *pop(stack_t *stack) {
   if (stack->node == NULL)
     return NULL;
   stack->node = stack->node->next;
+  stack->nnum--;
   return to_remove;
 }
 
